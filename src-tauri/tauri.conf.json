@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "WindowPet",
+    "productName": "DesktopDinos",
     "version": "0.0.9"
   },
   "tauri": {
@@ -47,9 +47,9 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "WindowPet",
-      "category": "Productivity",
-      "copyright": "Copyright (c) 2023 Seakmeng",
+      "identifier": "com.mtdinosaur.desktopdinos",
+      "category": "Entertainment",
+      "copyright": "Copyright (c) 2026 The Montana Dinosaur Center",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -62,7 +62,7 @@
       "active": true,
       "dialog": false,
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDZERTQ3OTFEMzhDNTJEOUEKUldTYUxjVTRIWG5rYmFYak50OVBjTnBORHQ5TE5WeHJDMGNHbEJZdWxoa0RvbFEyUDVPSno1NTEK",
-      "endpoints": ["https://github.com/SeakMengs/WindowPet/releases/latest/download/latest.json"],
+      "endpoints": ["https://github.com/tmdinosaurcenter/desktopdinos/releases/latest/download/latest.json"],
       "windows": {
         "installMode": "passive"
       }
@@ -74,7 +74,7 @@
       {
         "fullscreen": true,
         "resizable": false,
-        "title": "WindowPet",
+        "title": "Desktop Dinos",
         "width": 64,
         "height": 64,
         "transparent": true,

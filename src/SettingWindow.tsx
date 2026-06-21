@@ -10,11 +10,11 @@ import {
 import {
   IconSun,
   IconMoonStars,
-  IconCat,
+  IconDog,
   IconInfoCircle,
   IconSettings,
   IconBuildingStore,
-  IconPaw,
+  IconPlus,
 } from '@tabler/icons-react';
 import Logo from './ui/components/Logo';
 import SettingTabs from './ui/shell/SettingTabs';
@@ -71,7 +71,7 @@ function SettingWindow() {
       Component: MyPets,
       title: t("My Pets", { totalPets: pets.length }),
       description: t("Meet your furry friend, a loyal companion who loves to play and cuddle"),
-      Icon: <IconCat size="1rem" />,
+      Icon: <IconDog size="1rem" />,
       label: t('My Pet'),
       tab: ESettingTab.MyPets,
     },
@@ -87,7 +87,7 @@ function SettingWindow() {
       Component: AddPet,
       title: t("Add Custom Pet"),
       description: t("Add your custom pet to your computer and watch them bring kawaii cuteness to your digital world!"),
-      Icon: <IconPaw size="1rem" />,
+      Icon: <IconPlus size="1rem" />,
       label: t('Add Custom Pet'),
       tab: ESettingTab.AddPet,
     },

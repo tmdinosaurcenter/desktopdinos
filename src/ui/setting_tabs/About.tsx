@@ -38,36 +38,36 @@ function About() {
         {
             title: t("Developed by:"),
             link: {
-                url: "https://github.com/SeakMengs",
-                label: t("@Seakmeng"),
+                url: "https://tmdinosaurcenter.org",
+                label: "The Montana Dinosaur Center",
             },
         },
         {
             title: t("Source code:"),
             link: {
-                url: "https://github.com/SeakMengs/WindowPet",
-                label: t("@SeakMengs/WindowPet"),
+                url: "https://github.com/tmdinosaurcenter/desktopdinos",
+                label: "@tmdinosaurcenter/desktopdinos",
             },
         },
         {
             title: t("Report a bug:"),
             link: {
-                url: "https://github.com/SeakMengs/WindowPet/issues",
-                label: t("@SeakMengs/WindowPet/issues"),
+                url: "https://github.com/tmdinosaurcenter/desktopdinos/issues",
+                label: "@tmdinosaurcenter/desktopdinos/issues",
             },
         },
         {
             title: t("Community: "),
             link: {
-                url: "https://github.com/SeakMengs/WindowPet/discussions",
-                label: t("@SeakMengs/WindowPet/discussions"),
+                url: "https://tmdinosaurcenter.org",
+                label: "tmdinosaurcenter.org",
             },
         },
         {
             title: t("Buy me a coffee:"),
             link: {
-                url: "https://www.buymeacoffee.com/seakmeng",
-                label: t("BuyMeACoffee/@Seakmeng"),
+                url: "https://tmdinosaurcenter.org/support",
+                label: "Support TMDC",
             },
         },
     ]), []);
@@ -76,13 +76,14 @@ function About() {
         <Flex align={"center"} justify={"center"} direction={"column"} gap={"md"}>
             <Avatar
                 src="/media/icon.png"
-                alt="WindowPet"
+                alt="Desktop Dinos"
                 w={128}
                 h={128}
             />
-            <Text fw={700}>WindowPet</Text>
+            <Text fw={700}>Desktop Dinos</Text>
+            <Text fw={500} size="sm" c="dimmed">by The Montana Dinosaur Center</Text>
             <Text display={"flex"}>{t("Version", { version: appVersion })}
-                <Anchor mx={"xs"} onClick={() => open(`https://github.com/SeakMengs/WindowPet/releases/tag/v${appVersion}`)}>{t("(release note)")}</Anchor>
+                <Anchor mx={"xs"} onClick={() => open(`https://github.com/tmdinosaurcenter/desktopdinos/releases/tag/v${appVersion}`)}>{t("(release note)")}</Anchor>
             </Text>
             {
                 checkingForUpdate &&
